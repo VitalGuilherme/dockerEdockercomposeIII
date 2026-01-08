@@ -18,3 +18,12 @@
 
 - Python 3.13.3 (Caso queira rodar localmente sem container)
 
+# Clone do repositório GitHub.
+- git@github.com:VitalGuilherme/dockerEdockercomposeIII.git
+
+# Rodando o sistema comandos terminal.
+- podman machine init (cria uma máquina virtual)
+- podman machine star (inicia a máquina virtual)
+- podman-compose build (builda o arquivo yaml)
+- podman-compose up -d (Sobe o container pra rede)
+- podman-compose down (Pausa o container retirando da rede)
