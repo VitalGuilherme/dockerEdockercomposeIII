@@ -1,0 +1,14 @@
+version: "2.31.0"
+
+services:
+
+  app:
+    build: .
+    container_name: Ebac_docker-composeIII
+    ports: 
+    - "8001:8000"
+    volumes:
+    - .:/app
+    env_file:
+    - .env
+    command: ["poetry", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
